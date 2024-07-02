@@ -1,0 +1,34 @@
+{
+  "name": "prac",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "source ./deploy_local.sh && jest --forceExit",
+    "start": "source ./deploy_local.sh && babel-node src/Boot.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/cli": "^7.17.6",
+    "@babel/node": "^7.16.8",
+    "@babel/preset-env": "^7.16.11",
+    "axios": "^0.26.1",
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "express": "^4.17.3",
+    "express-mongo-sanitize": "^2.2.0",
+    "express-rate-limit": "^6.3.0",
+    "helmet": "^5.0.2",
+    "ioredis": "^4.28.5",
+    "joi": "^17.6.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongodb": "^4.4.1",
+    "nanoid-esm": "^2.1.0-esm.4",
+    "nodemon": "^2.0.15"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "supertest": "^7.0.0"
+  }
+}
